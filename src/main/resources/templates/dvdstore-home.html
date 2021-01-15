@@ -9,10 +9,13 @@
 
 <table border="1">
 
+    <a href="add-movie-form">Add movie</a>
+
     <tr th:each="movie: ${movies}">
         <td th:text="${movie.id}"></td>
         <td><a th:href="@{/movie/{id}(id=${movie.id})}" th:text="${movie.title}"/></td>
-<!--        <td th:text="${movie.title}"></td>
+
+
         <td th:text="${movie.genre}"></td>-->
     </tr>
 </table>
