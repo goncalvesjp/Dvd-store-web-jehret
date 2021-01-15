@@ -31,7 +31,6 @@ public class MovieController {
 
     @PostMapping("")
     public String addMovie(@Valid @ModelAttribute MovieForm movieForm, BindingResult bindingResult){
-
         if(bindingResult.hasErrors()){
             return "add-movie-form";
         } else {

@@ -22,7 +22,7 @@ public class HomeController {
     }
 
     @GetMapping("/dvdstore-home")
-    public @ModelAttribute("movies") List<Movie> displayHome() {
+    public @ModelAttribute("movies") Iterable<Movie> displayHome() {
         return movieService.getMovieList();
     }
 

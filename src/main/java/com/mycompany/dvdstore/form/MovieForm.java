@@ -9,12 +9,12 @@ public class MovieForm {
 
     private Long id;
 
-    @NotBlank
-    @Size(min = 1, max = 20)
+    @NotBlank(message = "Veuillez entrer un titre")
+    @Size(min = 0, max = 20 , message = "Entrez un titre de 20 caractères au plus")
     private String title;
-    @NotBlank
+    @NotBlank(message = "Veuillez choisir un genre")
     private String genre;
-    @Size(min = 0, max = 255)
+    @Size(min = 0, max = 255, message = "Entrez une description de 255 caractères au plus")
     private String description;
 
     public MovieForm() {
