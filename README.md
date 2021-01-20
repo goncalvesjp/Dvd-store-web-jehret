@@ -4,3 +4,6 @@ exos cours JP Ehret
 http://localhost/webui
 
 http://localhost/webui/dvdstore-home
+
+-api rest:
+http://localhost/webui/movie
