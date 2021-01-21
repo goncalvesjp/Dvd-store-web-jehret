@@ -29,7 +29,7 @@ public class MovieController {
         return "movie-details";
     }*/
 
-    /*@PostMapping("")
+    @PostMapping("/add")
     public String addMovie(@Valid @ModelAttribute MovieForm movieForm, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return "add-movie-form";
@@ -37,5 +37,11 @@ public class MovieController {
             movieService.registerMovie(movieForm.movieFormToMovie());
             return "movie-added";
         }
-    }*/
+    }
+
+    @GetMapping("")
+    public void displayHome(){
+
+       // return "dvdstore-home";
+    }
 }
