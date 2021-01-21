@@ -39,7 +39,7 @@ public class MovieController {
         }
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public void displayHome(){
 
        // return "dvdstore-home";
