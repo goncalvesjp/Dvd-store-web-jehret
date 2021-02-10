@@ -1,9 +1,10 @@
 # Dvd-store-wev-jehret
-exos cours JP Ehret
+exos cours Spring et Spring boot JP Ehret
 
 http://localhost/webui
 
-http://localhost/webui/dvdstore-home
+-ihm
+http://localhost/webui/dvdstore-home/
 
 -api rest:
 http://localhost/webui/movie

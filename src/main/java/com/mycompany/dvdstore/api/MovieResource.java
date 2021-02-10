@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @RestController
+@RequestMapping("/movie")
 public class MovieResource {
 
     private MovieServiceInterface movieService;
@@ -21,17 +22,17 @@ public class MovieResource {
         this.movieService = movieService;
     }
 
-    @GetMapping("/movie/{id}")
-    public Movie get(@PathVariable("id") Long id){
+    @GetMapping("/{id}")
+    public Movie get(@PathVariable("id") long id){
         return movieService.getMovieById(id);
     }
 
-    @PostMapping("")
+    @PostMapping
     public Movie add(@RequestBody Movie movie){
         return movieService.registerMovie(movie);
     }
 
-    @GetMapping("/movie")
+    @GetMapping("")
     public Iterable<Movie> list() {
         return movieService.getMovieList();
     }
